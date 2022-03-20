@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+html {
+    scroll-behavior: smooth;
+    height: 100%;
+}
+body{
+    height: 100%;
+}
+.navbar {
+    position: fixed;
+    width: 100%;
+    height: auto;
+    z-index: 999;
+    padding: 30px 0;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0009;
+}
+.navbar .logo{
+    margin-left: 15px;
+}
+.navbar .logo a {
+    color: crimson;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.navbar .logOut-btn{
+    margin-right: 30px;
+    font-size: 20px;
+    padding: 10px 5px 10px 5px;
+    border-radius: 10px;
+    background-color: crimson;
+}
+
+.navbar .logOut-btn:hover{
+    transform: scale(1.2);
+}
+/* BACKGROUND */
+.bg-image{
+    height: 100%;
+    background-position: center center;
+    background-size: cover;
+    background-image: url("../images/whiteHouse.jpeg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    align-items: center;
+}
+
+.card-holder{
+    display: flex;
+    margin-top: 20%;
+    float: left;
+}
+.card {
+    width: 100%; 
+    background: #222;
+    text-align: center;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 20px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    height: 5%;
+    overflow: hidden;
+  }
+.card:hover {
+    background: crimson;
+    overflow: hidden;
+  }
+.card .box {
+    padding: 1%;
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+.card:hover .box {
+    transform: scale(1.05);
+    overflow: hidden;
+}
+.card a{
+    overflow: hidden;
+}
+.card a .text {
+    font-size: 20px;
+    font-weight: 500;
+    color: whitesmoke;
+    overflow: hidden;
+}
+/* footer section styling */
+footer {
+    background: #111;
+    padding: 15px 23px;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    height: auto;
+}
+footer .text2{
+    color: crimson;
+    text-decoration: none;
+}
+
+footer .text1{
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+/****************8 responsive media query start **********88*/
+/* @media (max-width: 1104px) {
+    .card {
+        width: calc(33% - 20px);
+    }    
+}
+
+@media (max-width: 991px) {
+    .card {
+        width: calc(33% - 20px);
+    }    
+}
+@media (max-width: 947px) {
+  .card {
+    width: calc(50% - 10px);
+  }
+}
+
+@media (max-width: 690px) {
+  .card {
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+    .card {
+        width: 100%;
+      }
+} */

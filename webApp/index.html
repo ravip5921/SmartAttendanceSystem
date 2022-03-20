@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+    <title>Login Smart Attendance</title>
+ 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+    
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="css/loginStyle.css">
+
+</head>
+
+<body>
+    <div class="background">
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+    <form method="POST" action="php/login.php">
+        <h3>Login Here</h3>
+
+        <label for="username">Username</label>
+        <input type="text" placeholder="Email or Phone" name="username" id="username">
+
+        <label for="password">Password</label>
+        <input type="password" placeholder="Password" name="password" id="password">
+
+        <!-- <a href="pages/departments.html" ><div class ="button">Log In</div></a> -->
+        <input class ="button" type="submit" name="LogIn" value ="Log In">
+        <!-- <div class="naviButton">
+          <a href="pages/signUpPage.html"><div class="signUp"> Sign Up</div></a>
+          <div class="forgotPass">  Forgot Password</div>
+        </div> -->
+    </form>
+</body>
+</html>

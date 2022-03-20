@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+html {
+    scroll-behavior: smooth;
+    height: 100%;
+}
+body{
+    height: 100%;
+}
+.navbar {
+    position: fixed;
+    width: 100%;
+    height: auto;
+    z-index: 999;
+    padding: 30px 0;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0009;
+}
+.navbar .logo{
+    margin-left: 15px;
+}
+.navbar .logo a {
+    color: crimson;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.navbar .logOut-btn{
+    margin-right: 30px;
+    font-size: 20px;
+    padding: 10px 5px 10px 5px;
+    border-radius: 10px;
+    background-color: crimson;
+    width: auto;
+    height: auto;
+}
+
+.navbar .logOut-btn:hover{
+    transform: scale(1.2);
+}
+/******************** BACKGROUND ******************/
+.bg-image{
+    height: 100%;
+    background-position: center center;
+    background-size: cover;
+    background-image: url("../images/bct.jpeg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    align-items: center;
+}
+/* blur background */
+.bg {
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(8px);
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+}
+/* spacer to align all elements in center */
+.spacer {
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+}
+/******************** SEARCH FORM ******************/
+.search-form{
+    padding-top: 7rem;
+    color: whitesmoke;
+    font-size: 20px;
+    font-weight: 800;
+}
+.search-form input{
+    border-radius: 6px;
+    width: auto;
+    height: 2rem;
+}
+.search-form select{
+    border-radius: 6px;
+    width: auto;
+    height: 2rem;
+}
+/******************** BUTTONS CLASS ********************/
+/* card floater */
+.card-holder{
+    display: flex;
+    float: left;
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+}
+.card-holder  .btn {
+    width: 11rem;
+    background: #222;
+    text-align: center;
+    border-radius: 6px;
+    padding: 25px 25px;
+    cursor: pointer;
+    margin: 5px;
+    font-size: 18px;
+    font-weight: 500;
+    color: whitesmoke;
+}
+.btn:hover{
+    background-color: crimson;
+    transform: scale(1.05);
+}
+/********** footer section styling **********/
+footer {
+    background: #111;
+    padding: 15px 23px;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    height: auto;
+}
+footer .text2{
+    color: crimson;
+    text-decoration: none;
+}
+
+footer .text1{
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+
+/****************8 responsive media query start **********88*/
+@media (max-width: 1104px) {
+    .card {
+        width: calc(25% - 20px);
+    }    
+}
+
+@media (max-width: 991px) {
+    .card {
+        width: calc(25% - 20px);
+    }    
+}
+@media (max-width: 947px) {
+  .card {
+    width: calc(50% - 10px);
+  }
+}
+
+@media (max-width: 690px) {
+  .card {
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+.card {
+        width: 100%;
+      }
+}

@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+html {
+    scroll-behavior: smooth;
+    height: 100%;
+}
+body{
+    height: 100%;
+    /* background-image: url("../images/whiteHouse.jpeg");
+    background-repeat:repeat;
+    background-size: cover; */
+}
+
+/* BACKGROUND */
+.bg-image{
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-image: url("../images/whiteHouse.jpeg");
+    background-repeat: no-repeat;
+}
+/* blur background */
+.bg {
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(8px);
+    height: auto;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.card-holder{
+    display: flex;
+    float: center;
+    margin-left: 19rem;
+    margin-top: 1rem;
+    /* margin-bottom: 1rem; */
+}
+.card-search {
+    width: 200px; 
+    background: #222;
+    text-align: center;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 20px;
+    margin-top: 10px;
+    height: 6rem;
+    overflow: hidden;
+    /* padding: 1rem; */
+  }
+.card-search .box {
+    background: #222;
+    padding: 2rem;
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+.card-search:hover .box {
+    background: crimson;
+    transform: scale(1.05);
+    overflow: hidden;
+}
+.card-search a .text {
+    font-size: 25px;
+    font-weight: 500;
+    color: whitesmoke;
+    overflow: hidden;
+}
+.box-btn{
+    color: whitesmoke;
+    font-size: 22px;
+    font-weight: 500;
+    width: 200px; 
+    background: #222;
+    text-align: center;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 20px;
+    margin-top: 10px;
+    height: 6rem;
+    overflow: hidden;
+}
+.box-btn:hover{
+    background-color: crimson;
+    transform: scale(1.05);
+}
+/* TABLE */
+.styled-table {
+    border-collapse: collapse;
+    font-size: 2em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    margin: 0 auto ;
+}
+.styled-table  tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+    border-bottom: 1px solid #dddddd;
+}
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+.styled-table  tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+    color: #222;
+}
+
+.styled-table  tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+/* footer section styling */
+footer {
+    background: #111;
+    padding: 15px 23px;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    height: auto;
+}
+footer .text2{
+    color: crimson;
+    text-decoration: none;
+}
+
+footer .text1{
+    color: whitesmoke;
+    text-decoration: none;
+}
